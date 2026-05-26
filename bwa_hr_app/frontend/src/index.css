@@ -58,14 +58,15 @@ body {
 
 .eye-button {
   position: absolute;
-  right: -40px;
-  top: 3px;
+  right: -45px;
+  top: 8px;
   background: transparent;
   color: #777;
   border: none;
-  font-size: 20px;
   padding: 0;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .login-button {
@@ -380,4 +381,14 @@ button:disabled {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-textfield-decoration-container {
+  display: none;
 }
